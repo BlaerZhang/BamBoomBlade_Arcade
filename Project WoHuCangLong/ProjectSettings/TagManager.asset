@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Player 1 Upper Body
+  - Player 1 Lower Body
+  - Player 2 Lower Body
+  - Player 2 Upper Body
+  - Ground
+  - Player 1 Weapon
+  - Player 2 Weapon
+  - Player 1 Body
+  - Bamboo
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player 1 Upper Body
+  - Player 1 Lower Body
+  - Player 1 Weapon
+  - Player 1 Bamboo
+  - Player 2 Upper Body
+  - Player 2 Lower Body
+  - Player 2 Weapon
+  - Player 2 Bamboo
+  - Ground
+  - Player 1 Grabber
+  - Player 2 Grabber
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
