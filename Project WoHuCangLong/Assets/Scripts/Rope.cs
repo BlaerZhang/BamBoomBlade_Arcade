@@ -53,7 +53,7 @@ public class Rope : MonoBehaviour
         }
 
         //CONSTRAINTS
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 5; i++)
         {
             this.ApplyConstraint();
         }
