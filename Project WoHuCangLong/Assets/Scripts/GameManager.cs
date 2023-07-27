@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
 
     public float legMultiplier;
 
+    public GameObject jipoUI;
+
     // public HingeJoint2D player1FootJoint;
     //
     // public HingeJoint2D player1HandJoint;
@@ -68,6 +71,7 @@ public class GameManager : MonoBehaviour
         isInRound = true;
         isInMatch = true;
         player1HP = player2HP;
+        jipoUI.transform.localScale = Vector3.zero;
 
         bodyHitMultiplier.Add("Head", headMultiplier);
         bodyHitMultiplier.Add("Body", bodyMultiplier);
@@ -83,12 +87,14 @@ public class GameManager : MonoBehaviour
             player2WinsCount += 1;
             if (player2WinsCount == targetWinsCount)
             {
-                endingText.text = "Right Wins";
+                // endingText.text = "Right Wins";
+                PlayUIAnimation();
                 isInMatch = false;
             }
             else
             {
-                endingText.text = "Right Wins the Round";
+                // endingText.text = "Right Wins the Round";
+                PlayUIAnimation();
                 Invoke("ResetRound", 8f);
             }
         }
@@ -99,12 +105,14 @@ public class GameManager : MonoBehaviour
             player1WinsCount += 1;
             if (player1WinsCount == targetWinsCount)
             {
-                endingText.text = "Left Wins";
+                // endingText.text = "Left Wins";
+                PlayUIAnimation();
                 isInMatch = false;
             }
             else
             {
-                endingText.text = "Left Wins the Round";
+                // endingText.text = "Left Wins the Round";
+                PlayUIAnimation();
                 Invoke("ResetRound", 8f);
             }
         }
@@ -116,6 +124,19 @@ public class GameManager : MonoBehaviour
         isInMatch = true;
         player1HP = player2HP = 100;
         endingText.text = "";
+        jipoUI.transform.localScale = Vector3.zero;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Invoke("CanvasGetMainCam",0.1f);
+    }
+
+    public void PlayUIAnimation()
+    {
+        Tween jipoTween = jipoUI.transform.DOScale(Vector3.one, 1f);
+        jipoTween.Play();
+    }
+
+    public void CanvasGetMainCam()
+    {
+        GetComponentInChildren<Canvas>().worldCamera = Camera.main;
     }
 }
