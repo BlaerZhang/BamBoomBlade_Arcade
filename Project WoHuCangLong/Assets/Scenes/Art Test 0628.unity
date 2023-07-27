@@ -752,7 +752,7 @@ TrailRenderer:
   m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1287,7 +1287,7 @@ Transform:
   m_GameObject: {fileID: 75184494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 20.49}
-  m_LocalScale: {x: 90, y: 45, z: 0}
+  m_LocalScale: {x: 90, y: 50, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2889,7 +2889,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -1.22}
-  m_ConnectedAnchor: {x: -0.5917306, y: -0.6997103}
+  m_ConnectedAnchor: {x: -0.62884617, y: -0.47536272}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -4310,7 +4310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198810470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.54100025, y: 1.97, z: 0}
+  m_LocalPosition: {x: -0.54100025, y: 1.68, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4332,7 +4332,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -2.0403855, y: 0.00000078219244}
+  m_ConnectedAnchor: {x: -2.040385, y: -0.000000105345784}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &198810473
@@ -4539,7 +4539,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1919.9999, y: 1080.1697}
+  m_SizeDelta: {x: 1919.9999, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &213960351
 GameObject:
@@ -6682,7 +6682,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.99041915, y: 0.7219095}
+  m_ConnectedAnchor: {x: 1.0894614, y: 0.61100054}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!61 &297914449
@@ -6771,7 +6771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297914445}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5199999, y: 1.97, z: 0}
+  m_LocalPosition: {x: 0.5199999, y: 1.68, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7669,7 +7669,7 @@ TrailRenderer:
   m_Time: 0.15
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -8717,7 +8717,7 @@ TrailRenderer:
   m_Time: 0.35
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -9787,7 +9787,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -1.22}
-  m_ConnectedAnchor: {x: -0.59173065, y: -0.69971013}
+  m_ConnectedAnchor: {x: -0.62884635, y: -0.47536257}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -10503,7 +10503,7 @@ TrailRenderer:
   m_Time: 0.25
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -10889,7 +10889,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1, y: 0}
-  m_ConnectedAnchor: {x: -0.58961433, y: 0.04536267}
+  m_ConnectedAnchor: {x: -0.6269232, y: 0.12028908}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -11699,8 +11699,8 @@ Transform:
   m_GameObject: {fileID: 487305999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 3.631, z: 0}
-  m_LocalScale: {x: 0.90909094, y: 0.90909094, z: 0.90909094}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1914456900}
   - {fileID: 1253075873}
@@ -13027,7 +13027,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.9904189, y: 0.12554492}
+  m_ConnectedAnchor: {x: 1.089462, y: 0.0710002}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!61 &580823073
@@ -13116,7 +13116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580823069}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5199999, y: 3.36, z: 0}
+  m_LocalPosition: {x: 0.5199999, y: 3, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15245,7 +15245,7 @@ TrailRenderer:
   m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -16577,7 +16577,7 @@ TrailRenderer:
   m_Time: 0.35
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -17622,7 +17622,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.99041927, y: 0.7219092}
+  m_ConnectedAnchor: {x: 1.0894616, y: 0.61100036}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &834342295
@@ -17732,7 +17732,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834342292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5199999, y: 1.97, z: 0}
+  m_LocalPosition: {x: 0.5199999, y: 1.68, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18008,8 +18008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1767, y: 25}
-  m_SizeDelta: {x: 4295.548, y: 2416.2458}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 3840, y: 3840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840178389
 MonoBehaviour:
@@ -18342,7 +18342,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.05, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18353,7 +18353,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 1}
+  m_Size: {x: 0.6, y: 0.8}
   m_EdgeRadius: 0
 --- !u!331 &853843251
 SpriteMask:
@@ -19524,11 +19524,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932361028713838402, guid: 25c31502d32ad3d45aeacb71f00a5010, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.194
+      value: 0.261
       objectReference: {fileID: 0}
     - target: {fileID: 932361028713838402, guid: 25c31502d32ad3d45aeacb71f00a5010, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.288
+      value: -0.073
       objectReference: {fileID: 0}
     - target: {fileID: 932361028713838402, guid: 25c31502d32ad3d45aeacb71f00a5010, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19572,7 +19572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932361028713838413, guid: 25c31502d32ad3d45aeacb71f00a5010, type: 3}
       propertyPath: m_TagString
-      value: Player 1 Upper Body
+      value: Player 2 Upper Body
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25c31502d32ad3d45aeacb71f00a5010, type: 3}
@@ -24131,8 +24131,8 @@ Transform:
   m_GameObject: {fileID: 1098326752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 3.631, z: 0}
-  m_LocalScale: {x: 0.90909094, y: 0.90909094, z: 0.90909094}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 580823075}
   - {fileID: 1282000717}
@@ -25369,7 +25369,7 @@ TrailRenderer:
   m_Time: 0.25
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -27397,7 +27397,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 4295.548, y: 2416.2458}
+  m_SizeDelta: {x: 3840, y: 3840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217976597
 MonoBehaviour:
@@ -27548,7 +27548,7 @@ TrailRenderer:
   m_Time: 0.4
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -28152,7 +28152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253075872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.54100025, y: 3.36, z: 0}
+  m_LocalPosition: {x: -0.54100025, y: 3, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28174,7 +28174,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -2.0403843, y: 0.0000005504317}
+  m_ConnectedAnchor: {x: -2.040385, y: -0.000000105345784}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &1253075875
@@ -29195,7 +29195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282000716}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.54100025, y: 3.36, z: 0}
+  m_LocalPosition: {x: -0.54100025, y: 3, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29217,7 +29217,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -2.0403845, y: -0.00000005794018}
+  m_ConnectedAnchor: {x: -2.0403852, y: -0.0000006320747}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &1282000719
@@ -30032,7 +30032,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 4295.548, y: 2416.2458}
+  m_SizeDelta: {x: 3840, y: 3840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340993835
 MonoBehaviour:
@@ -32057,7 +32057,7 @@ TrailRenderer:
   m_Time: 0.15
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -34578,7 +34578,7 @@ TrailRenderer:
   m_Time: 0.4
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -34923,7 +34923,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.965527}
+  m_Offset: {x: 0, y: 1.9489938}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -34934,7 +34934,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2037904, y: 2.6691961}
+  m_Size: {x: 0.2037904, y: 2.7022626}
   m_EdgeRadius: 0
 --- !u!50 &1515067750
 Rigidbody2D:
@@ -34971,10 +34971,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionForce: {fileID: 11400000, guid: 2e34196ede8e61d479c8ab34f6eaa388, type: 2}
   body: {fileID: 1946573183}
-  rivalBody: {fileID: 1150666644}
+  rivalBody: {fileID: 892172625}
   bloodStain: {fileID: 3924816081691890621, guid: 12af8ec80c194324bad8234507b3daaf, type: 3}
   player1BambooBloodStain: {fileID: 452151841}
-  player2BambooBloodStain: {fileID: 1175631781}
+  player2BambooBloodStain: {fileID: 1517589541}
 --- !u!212 &1515067752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36023,7 +36023,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1, y: 0}
-  m_ConnectedAnchor: {x: -0.58961445, y: 0.045362584}
+  m_ConnectedAnchor: {x: -0.62692297, y: 0.1202898}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -38037,7 +38037,7 @@ TrailRenderer:
   m_Time: 0.3
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -38426,7 +38426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674360938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.54100025, y: 1.97, z: 0}
+  m_LocalPosition: {x: -0.54100025, y: 1.68, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38448,7 +38448,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -2.0403845, y: -0.00000005794018}
+  m_ConnectedAnchor: {x: -2.0403852, y: -0.0000006320747}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &1674360941
@@ -40474,7 +40474,7 @@ TrailRenderer:
   m_Time: 0.3
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.25
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -44001,7 +44001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914456898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5199999, y: 3.36, z: 0}
+  m_LocalPosition: {x: 0.5199999, y: 3, z: 0}
   m_LocalScale: {x: 0.52, y: 0.69, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44036,7 +44036,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.99041915, y: 0.12554556}
+  m_ConnectedAnchor: {x: 1.089462, y: 0.071000315}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!61 &1914456903
@@ -49560,7 +49560,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -49571,7 +49571,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 1}
+  m_Size: {x: 0.6, y: 0.8}
   m_EdgeRadius: 0
 --- !u!331 &2134435228
 SpriteMask:
