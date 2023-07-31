@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2882d79c6cac13b40ba93ae6c8a92504
+guid: 26f1088a28b9057498be2dcb2c114f88
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 12
+    spritePixelsToUnits: 10
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -93,7 +93,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638264400203205037
+  platformSettingsDirtyTick: 638264444456499201
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -117,18 +117,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: bush-test
+  - name: bamboo-sprite
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: -1.6, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 500
-      height: 108
-    spriteID: 93d058602ceca954b838a997b199b5d4
+      width: 5
+      height: 58
+    spriteID: 3bb6b1c090d51814e9fd056a976e934c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,18 +138,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: bush-test_0
+  - name: bamboo-sprite_0
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1006
-      height: 187
-    spriteID: b7b0d76f6cbde9a4d8ddcf2c6e8f60e5
+      width: 5
+      height: 58
+    spriteID: 96a0939d634846b4b9c1afc89e36f031
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,20 +160,20 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -445267705
-    name: bush-test
+    guid: -2027884224
+    name: bamboo-sprite
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: bush-test
+    - name: bamboo-sprite
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 40
         y: 0
-        width: 1006
-        height: 187
-      spriteId: 93d058602ceca954b838a997b199b5d4
+        width: 5
+        height: 58
+      spriteId: 3bb6b1c090d51814e9fd056a976e934c
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -223,4 +223,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 1000, y: 200}
+  canvasSize: {x: 64, y: 64}
