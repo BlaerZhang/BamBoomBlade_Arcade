@@ -8017,13 +8017,78 @@ MonoBehaviour:
   - rid: 7244429297954586624
   - rid: 7244429545407250432
   - rid: 7244429549407830016
-  - rid: 7244429638958317568
+  - rid: 3640321405999120384
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   ForceStopFeedbacksOnDisable: 1
   references:
     version: 2
     RefIds:
+    - rid: 3640321405999120384
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: 536440968
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 420179117}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: c00a9875993666e48b69b9fce43940ba, type: 3}
+        - {fileID: 8300000, guid: fd853e5290957074a9b36635e88fd785, type: 3}
+        - {fileID: 8300000, guid: b266857234d32274bbebdb6a6db60ceb, type: 3}
+        - {fileID: 8300000, guid: 7fe7b2094407d46419a2572e82e334c4, type: 3}
+        - {fileID: 8300000, guid: 954e81051d70181439c867c84da2d543, type: 3}
+        - {fileID: 8300000, guid: fe14945d30751b140a5bec084d814189, type: 3}
+        - {fileID: 8300000, guid: d247605ee30e13c409ea902bef0f6a12, type: 3}
+        - {fileID: 8300000, guid: ed76e65d293261840a4f22f0b44bf19d, type: 3}
+        - {fileID: 8300000, guid: 4b486ea29d57bc049bf8afa9312d8c1f, type: 3}
+        - {fileID: 8300000, guid: e19622e5a2f5d6842b90c9429fca2e6b, type: 3}
+        - {fileID: 8300000, guid: f1ea4f122d3e6824ea264313ea69e636, type: 3}
+        - {fileID: 8300000, guid: 95a0fc4ba95b523439e3045514310469, type: 3}
+        - {fileID: 8300000, guid: a1c485e1414b20943bb56c9f3db4e25a, type: 3}
+        - {fileID: 8300000, guid: 5beac5800b889874cae740f8cc677240, type: 3}
+        - {fileID: 8300000, guid: b9b095df3eb19fe4ebef3d170434b618, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 1
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
     - rid: 7244429281352220673
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
       data:
@@ -8325,66 +8390,6 @@ MonoBehaviour:
         TimeScaleLerp: 0
         TimeScaleLerpSpeed: 1
         ResetTimescaleOnStop: 0
-    - rid: 7244429638958317568
-      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
-      data:
-        Active: 1
-        UniqueID: -540063750
-        Label: Sound
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 0
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        RandomizeOutput: 0
-        RandomMultiplier: {x: 0.8, y: 1}
-        RandomizeDuration: 0
-        RandomDurationMultiplier: {x: 0.5, y: 2}
-        Owner: {fileID: 420179117}
-        DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 06f4fffa0cfa81d49a0bc849615d5414, type: 3}
-        - {fileID: 8300000, guid: 13f1e7c0b9c38fa449baf8ae5931e63a, type: 3}
-        - {fileID: 8300000, guid: 10b95654f631a894a90c45f6c84ce4a3, type: 3}
-        - {fileID: 8300000, guid: 6cb1337e113e8d94ab96d2b92ca9433b, type: 3}
-        - {fileID: 8300000, guid: ae3266b6c22b5a144a20b1ac89eea286, type: 3}
-        - {fileID: 8300000, guid: ce4f647277fb35d41a9cce23ef4d4ee9, type: 3}
-        - {fileID: 8300000, guid: 890002dbc5b5cb947a8acf887deed793, type: 3}
-        - {fileID: 8300000, guid: 91dbbeadd838b2a4ca6f7584d8bd8b51, type: 3}
-        - {fileID: 8300000, guid: 3d7ae0eade40ed341b71e09de251de71, type: 3}
-        - {fileID: 8300000, guid: 8be528accac5c2d44afefc0e9ffdfbdd, type: 3}
-        - {fileID: 8300000, guid: 4e0869592ea26fa4d8fdd099ac585cd7, type: 3}
-        TestPlayButton:
-          ButtonText: Debug Play Sound
-        TestStopButton:
-          ButtonText: Debug Stop Sound
-        PlayMethod: 1
-        PoolSize: 10
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
-        SfxAudioMixerGroup: {fileID: 0}
-        Priority: 128
 --- !u!1 &423738750
 GameObject:
   m_ObjectHideFlags: 0
@@ -10035,7 +10040,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1367f06409efe03439e3ca7fb412dffb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d39b54589a948454fadd76e247bd1667, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10522,12 +10527,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520025651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.98, y: -3.29, z: 0}
-  m_LocalScale: {x: 1.64, y: 1.64, z: 1.64}
+  m_LocalPosition: {x: 1.75, y: -10.165001, z: 0}
+  m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1046577865}
-  m_RootOrder: 1
+  m_Father: {fileID: 1367641737}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &520025653
 SpriteRenderer:
@@ -12998,7 +13003,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13170719, y: -9.173164}
+  m_Offset: {x: -0.13170624, y: -9.224601}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13009,7 +13014,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 44.025787, y: 13.508526}
+  m_Size: {x: 44.025787, y: 13.405653}
   m_EdgeRadius: 0
 --- !u!212 &740579493
 SpriteRenderer:
@@ -13683,7 +13688,7 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 775118144}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 31aa2eb574c8efe48b7f02d0e265d72c, type: 3}
+        Sfx: {fileID: 8300000, guid: 43d648a6deceaa1418de7060a9f3e2ae, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -16682,7 +16687,7 @@ MonoBehaviour:
         TimeScale: 0.75
         TimeScaleDuration: 0.25
         TimeScaleLerp: 0
-        TimeScaleLerpSpeed: 1
+        TimeScaleLerpSpeed: 0.81
         ResetTimescaleOnStop: 0
     - rid: 7244429638958317568
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
@@ -16721,17 +16726,22 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: 06f4fffa0cfa81d49a0bc849615d5414, type: 3}
-        - {fileID: 8300000, guid: 13f1e7c0b9c38fa449baf8ae5931e63a, type: 3}
-        - {fileID: 8300000, guid: 10b95654f631a894a90c45f6c84ce4a3, type: 3}
-        - {fileID: 8300000, guid: 6cb1337e113e8d94ab96d2b92ca9433b, type: 3}
-        - {fileID: 8300000, guid: ae3266b6c22b5a144a20b1ac89eea286, type: 3}
-        - {fileID: 8300000, guid: ce4f647277fb35d41a9cce23ef4d4ee9, type: 3}
-        - {fileID: 8300000, guid: 890002dbc5b5cb947a8acf887deed793, type: 3}
-        - {fileID: 8300000, guid: 91dbbeadd838b2a4ca6f7584d8bd8b51, type: 3}
-        - {fileID: 8300000, guid: 3d7ae0eade40ed341b71e09de251de71, type: 3}
-        - {fileID: 8300000, guid: 8be528accac5c2d44afefc0e9ffdfbdd, type: 3}
-        - {fileID: 8300000, guid: 4e0869592ea26fa4d8fdd099ac585cd7, type: 3}
+        - {fileID: 8300000, guid: c00a9875993666e48b69b9fce43940ba, type: 3}
+        - {fileID: 8300000, guid: fd853e5290957074a9b36635e88fd785, type: 3}
+        - {fileID: 8300000, guid: b266857234d32274bbebdb6a6db60ceb, type: 3}
+        - {fileID: 8300000, guid: 7fe7b2094407d46419a2572e82e334c4, type: 3}
+        - {fileID: 8300000, guid: 954e81051d70181439c867c84da2d543, type: 3}
+        - {fileID: 8300000, guid: fe14945d30751b140a5bec084d814189, type: 3}
+        - {fileID: 8300000, guid: d247605ee30e13c409ea902bef0f6a12, type: 3}
+        - {fileID: 8300000, guid: ed76e65d293261840a4f22f0b44bf19d, type: 3}
+        - {fileID: 8300000, guid: 4b486ea29d57bc049bf8afa9312d8c1f, type: 3}
+        - {fileID: 8300000, guid: e19622e5a2f5d6842b90c9429fca2e6b, type: 3}
+        - {fileID: 8300000, guid: f1ea4f122d3e6824ea264313ea69e636, type: 3}
+        - {fileID: 8300000, guid: 95a0fc4ba95b523439e3045514310469, type: 3}
+        - {fileID: 8300000, guid: a1c485e1414b20943bb56c9f3db4e25a, type: 3}
+        - {fileID: 8300000, guid: 5beac5800b889874cae740f8cc677240, type: 3}
+        - {fileID: 8300000, guid: b9b095df3eb19fe4ebef3d170434b618, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
         TestPlayButton:
           ButtonText: Debug Play Sound
         TestStopButton:
@@ -18602,13 +18612,78 @@ MonoBehaviour:
   - rid: 7244429281352220678
   - rid: 7244429297954586625
   - rid: 7244429484784353282
-  - rid: 7244429638958317569
+  - rid: 3640321405999120386
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   ForceStopFeedbacksOnDisable: 1
   references:
     version: 2
     RefIds:
+    - rid: 3640321405999120386
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: 185485938
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1045651126}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: c00a9875993666e48b69b9fce43940ba, type: 3}
+        - {fileID: 8300000, guid: fd853e5290957074a9b36635e88fd785, type: 3}
+        - {fileID: 8300000, guid: b266857234d32274bbebdb6a6db60ceb, type: 3}
+        - {fileID: 8300000, guid: 7fe7b2094407d46419a2572e82e334c4, type: 3}
+        - {fileID: 8300000, guid: 954e81051d70181439c867c84da2d543, type: 3}
+        - {fileID: 8300000, guid: fe14945d30751b140a5bec084d814189, type: 3}
+        - {fileID: 8300000, guid: d247605ee30e13c409ea902bef0f6a12, type: 3}
+        - {fileID: 8300000, guid: ed76e65d293261840a4f22f0b44bf19d, type: 3}
+        - {fileID: 8300000, guid: 4b486ea29d57bc049bf8afa9312d8c1f, type: 3}
+        - {fileID: 8300000, guid: e19622e5a2f5d6842b90c9429fca2e6b, type: 3}
+        - {fileID: 8300000, guid: f1ea4f122d3e6824ea264313ea69e636, type: 3}
+        - {fileID: 8300000, guid: 95a0fc4ba95b523439e3045514310469, type: 3}
+        - {fileID: 8300000, guid: a1c485e1414b20943bb56c9f3db4e25a, type: 3}
+        - {fileID: 8300000, guid: 5beac5800b889874cae740f8cc677240, type: 3}
+        - {fileID: 8300000, guid: b9b095df3eb19fe4ebef3d170434b618, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 1
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
     - rid: 7244429281352220673
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
       data:
@@ -18829,66 +18904,6 @@ MonoBehaviour:
         FlashDuration: 0.1
         FlashAlpha: 1
         FlashID: 0
-    - rid: 7244429638958317569
-      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
-      data:
-        Active: 1
-        UniqueID: 1096348347
-        Label: Sound
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 0
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        RandomizeOutput: 0
-        RandomMultiplier: {x: 0.8, y: 1}
-        RandomizeDuration: 0
-        RandomDurationMultiplier: {x: 0.5, y: 2}
-        Owner: {fileID: 1045651126}
-        DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 06f4fffa0cfa81d49a0bc849615d5414, type: 3}
-        - {fileID: 8300000, guid: 13f1e7c0b9c38fa449baf8ae5931e63a, type: 3}
-        - {fileID: 8300000, guid: 10b95654f631a894a90c45f6c84ce4a3, type: 3}
-        - {fileID: 8300000, guid: 6cb1337e113e8d94ab96d2b92ca9433b, type: 3}
-        - {fileID: 8300000, guid: ae3266b6c22b5a144a20b1ac89eea286, type: 3}
-        - {fileID: 8300000, guid: ce4f647277fb35d41a9cce23ef4d4ee9, type: 3}
-        - {fileID: 8300000, guid: 890002dbc5b5cb947a8acf887deed793, type: 3}
-        - {fileID: 8300000, guid: 91dbbeadd838b2a4ca6f7584d8bd8b51, type: 3}
-        - {fileID: 8300000, guid: 3d7ae0eade40ed341b71e09de251de71, type: 3}
-        - {fileID: 8300000, guid: 8be528accac5c2d44afefc0e9ffdfbdd, type: 3}
-        - {fileID: 8300000, guid: 4e0869592ea26fa4d8fdd099ac585cd7, type: 3}
-        TestPlayButton:
-          ButtonText: Debug Play Sound
-        TestStopButton:
-          ButtonText: Debug Stop Sound
-        PlayMethod: 1
-        PoolSize: 10
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
-        SfxAudioMixerGroup: {fileID: 0}
-        Priority: 128
 --- !u!1 &1046577864
 GameObject:
   m_ObjectHideFlags: 0
@@ -18914,14 +18929,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046577864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.74, y: -8.52, z: 0}
+  m_LocalPosition: {x: 2.74, y: -8.85, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1349129512}
-  - {fileID: 520025652}
+  m_Children: []
   m_Father: {fileID: 1367641737}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1046577866
 SpriteRenderer:
@@ -20103,13 +20116,78 @@ MonoBehaviour:
   - rid: 7244429297954586624
   - rid: 7244429545407250432
   - rid: 7244429549407830016
-  - rid: 7244429638958317568
+  - rid: 3640321405999120385
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   ForceStopFeedbacksOnDisable: 1
   references:
     version: 2
     RefIds:
+    - rid: 3640321405999120385
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: -1264793252
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1084590115}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: c00a9875993666e48b69b9fce43940ba, type: 3}
+        - {fileID: 8300000, guid: fd853e5290957074a9b36635e88fd785, type: 3}
+        - {fileID: 8300000, guid: b266857234d32274bbebdb6a6db60ceb, type: 3}
+        - {fileID: 8300000, guid: 7fe7b2094407d46419a2572e82e334c4, type: 3}
+        - {fileID: 8300000, guid: 954e81051d70181439c867c84da2d543, type: 3}
+        - {fileID: 8300000, guid: fe14945d30751b140a5bec084d814189, type: 3}
+        - {fileID: 8300000, guid: d247605ee30e13c409ea902bef0f6a12, type: 3}
+        - {fileID: 8300000, guid: ed76e65d293261840a4f22f0b44bf19d, type: 3}
+        - {fileID: 8300000, guid: 4b486ea29d57bc049bf8afa9312d8c1f, type: 3}
+        - {fileID: 8300000, guid: e19622e5a2f5d6842b90c9429fca2e6b, type: 3}
+        - {fileID: 8300000, guid: f1ea4f122d3e6824ea264313ea69e636, type: 3}
+        - {fileID: 8300000, guid: 95a0fc4ba95b523439e3045514310469, type: 3}
+        - {fileID: 8300000, guid: a1c485e1414b20943bb56c9f3db4e25a, type: 3}
+        - {fileID: 8300000, guid: 5beac5800b889874cae740f8cc677240, type: 3}
+        - {fileID: 8300000, guid: b9b095df3eb19fe4ebef3d170434b618, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 1
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
     - rid: 7244429281352220673
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
       data:
@@ -20410,66 +20488,6 @@ MonoBehaviour:
         TimeScaleLerp: 0
         TimeScaleLerpSpeed: 1
         ResetTimescaleOnStop: 0
-    - rid: 7244429638958317568
-      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
-      data:
-        Active: 1
-        UniqueID: -540063750
-        Label: Sound
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 0
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        RandomizeOutput: 0
-        RandomMultiplier: {x: 0.8, y: 1}
-        RandomizeDuration: 0
-        RandomDurationMultiplier: {x: 0.5, y: 2}
-        Owner: {fileID: 1084590115}
-        DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 06f4fffa0cfa81d49a0bc849615d5414, type: 3}
-        - {fileID: 8300000, guid: 13f1e7c0b9c38fa449baf8ae5931e63a, type: 3}
-        - {fileID: 8300000, guid: 10b95654f631a894a90c45f6c84ce4a3, type: 3}
-        - {fileID: 8300000, guid: 6cb1337e113e8d94ab96d2b92ca9433b, type: 3}
-        - {fileID: 8300000, guid: ae3266b6c22b5a144a20b1ac89eea286, type: 3}
-        - {fileID: 8300000, guid: ce4f647277fb35d41a9cce23ef4d4ee9, type: 3}
-        - {fileID: 8300000, guid: 890002dbc5b5cb947a8acf887deed793, type: 3}
-        - {fileID: 8300000, guid: 91dbbeadd838b2a4ca6f7584d8bd8b51, type: 3}
-        - {fileID: 8300000, guid: 3d7ae0eade40ed341b71e09de251de71, type: 3}
-        - {fileID: 8300000, guid: 8be528accac5c2d44afefc0e9ffdfbdd, type: 3}
-        - {fileID: 8300000, guid: 4e0869592ea26fa4d8fdd099ac585cd7, type: 3}
-        TestPlayButton:
-          ButtonText: Debug Play Sound
-        TestStopButton:
-          ButtonText: Debug Stop Sound
-        PlayMethod: 1
-        PoolSize: 10
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
-        SfxAudioMixerGroup: {fileID: 0}
-        Priority: 128
 --- !u!1 &1085911352
 GameObject:
   m_ObjectHideFlags: 0
@@ -25309,12 +25327,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349129511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.11, y: -3.34, z: 0}
-  m_LocalScale: {x: 1.64, y: 1.64, z: 1.64}
+  m_LocalPosition: {x: -1.8149998, y: -10.190001, z: 0}
+  m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1046577865}
-  m_RootOrder: 0
+  m_Father: {fileID: 1367641737}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1349129513
 SpriteRenderer:
@@ -25779,6 +25797,8 @@ Transform:
   - {fileID: 197780686}
   - {fileID: 1927201990}
   - {fileID: 1781779251}
+  - {fileID: 1349129512}
+  - {fileID: 520025652}
   - {fileID: 1046577865}
   m_Father: {fileID: 0}
   m_RootOrder: 4
