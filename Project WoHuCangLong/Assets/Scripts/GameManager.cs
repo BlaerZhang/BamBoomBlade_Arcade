@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayUIAnimation()
     {
-        Tween jipoTween = jipoUI.transform.DOScale(Vector3.one, 1f);
+        Tween jipoTween = jipoUI.transform.DOScale(Vector3.one, 1f).SetUpdate(true);
         jipoTween.Play();
     }
 
