@@ -40,12 +40,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10fea1c97e07f47e9bd7f60f0e75e2fe, type: 3}
   m_Name: AnalogTVNoise
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enable:
     m_OverrideState: 1
     m_Value: 1
   staticNoise:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   Horizontal:
     m_OverrideState: 1
@@ -57,33 +57,33 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 60
   tile:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 1, y: 1}
   textureAngle:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   edgeCutOff:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   CutOff:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   barSpeed:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.1
   texture:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 0}
     dimension: 1
   mask:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 0}
     dimension: 1
   maskChannel:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   GlobalPostProcessingSettings:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
 --- !u!114 &-5661358127976111706
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4388191585ea44bb892b7a3954c42607, type: 3}
   m_Name: Bleed
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -335,46 +335,6 @@ MonoBehaviour:
   GlobalPostProcessingSettings:
     m_OverrideState: 1
     m_Value: 0
---- !u!114 &-1615484535878840150
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d5e41f92d0f43b8b6ff8cad98e0c16, type: 3}
-  m_Name: Fisheye
-  m_EditorClassIdentifier: 
-  active: 1
-  enable:
-    m_OverrideState: 1
-    m_Value: 1
-  fisheyeType:
-    m_OverrideState: 1
-    m_Value: 0
-  bend:
-    m_OverrideState: 1
-    m_Value: 0.2
-  cutOffX:
-    m_OverrideState: 1
-    m_Value: 0.5
-  cutOffY:
-    m_OverrideState: 1
-    m_Value: 0.5
-  fadeX:
-    m_OverrideState: 1
-    m_Value: 1
-  fadeY:
-    m_OverrideState: 1
-    m_Value: 1
-  size:
-    m_OverrideState: 1
-    m_Value: 1
-  GlobalPostProcessingSettings:
-    m_OverrideState: 1
-    m_Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +358,7 @@ MonoBehaviour:
   - {fileID: 9074334773852544836}
   - {fileID: 2803734780060127742}
   - {fileID: -5661358127976111706}
-  - {fileID: -1615484535878840150}
+  - {fileID: 7214073478631245359}
 --- !u!114 &2803734780060127742
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -417,44 +377,72 @@ MonoBehaviour:
     m_Value: 1
   fade:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.657
   maskDark:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1.124
   maskLight:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1.311
   hardScan:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -8
   resScale:
-    m_OverrideState: 1
-    m_Value: 3.2
+    m_OverrideState: 0
+    m_Value: 1
   ScaleWithActualScreenSize:
-    m_OverrideState: 1
-    m_Value: 0
+    m_OverrideState: 0
+    m_Value: 1
   hardPix:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -3
   warpMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   warp:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0, y: 0}
   scale:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.5
   mask:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 0}
     dimension: 1
   maskChannel:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   GlobalPostProcessingSettings:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
+--- !u!114 &7214073478631245359
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.164
+  xMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  yMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  scale:
+    m_OverrideState: 1
+    m_Value: 1.05
 --- !u!114 &7428289031197997210
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -473,7 +461,7 @@ MonoBehaviour:
     m_Value: 1
   GlowHalation:
     m_OverrideState: 1
-    m_Value: 1.26
+    m_Value: 1.54
   GlowDifusion:
     m_OverrideState: 1
     m_Value: 0.84

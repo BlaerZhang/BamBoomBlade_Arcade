@@ -6526,8 +6526,8 @@ ParticleSystem:
     rowMode: 1
     sprites:
     - sprite: {fileID: 0}
-    flipU: 0.5
-    flipV: 0.5
+    flipU: 0
+    flipV: 0
   VelocityModule:
     enabled: 0
     x:
@@ -9834,9 +9834,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -86058307
+  m_SortingLayer: 1
+  m_SortingOrder: 20
   m_RenderMode: 1
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -9850,7 +9850,7 @@ ParticleSystemRenderer:
   m_ShadowBias: 0
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0.45, z: 0}
-  m_Flip: {x: 0, y: 0, z: 0}
+  m_Flip: {x: 0.5, y: 0.5, z: 0}
   m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
@@ -11417,8 +11417,8 @@ ParticleSystem:
     rowMode: 1
     sprites:
     - sprite: {fileID: 0}
-    flipU: 0.5
-    flipV: 0.5
+    flipU: 0
+    flipV: 0
   VelocityModule:
     enabled: 0
     x:
@@ -14725,9 +14725,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -86058307
+  m_SortingLayer: 1
+  m_SortingOrder: 20
   m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -14741,7 +14741,7 @@ ParticleSystemRenderer:
   m_ShadowBias: 0
   m_RenderAlignment: 2
   m_Pivot: {x: 0, y: 0, z: 0}
-  m_Flip: {x: 0, y: 0, z: 0}
+  m_Flip: {x: 0.5, y: 0.5, z: 0}
   m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
@@ -19634,9 +19634,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -86058307
+  m_SortingLayer: 1
+  m_SortingOrder: 20
   m_RenderMode: 1
   m_MeshDistribution: 0
   m_SortMode: 0

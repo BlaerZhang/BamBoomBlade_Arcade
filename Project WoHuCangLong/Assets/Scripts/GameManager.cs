@@ -88,13 +88,13 @@ public class GameManager : MonoBehaviour
             if (player2WinsCount == targetWinsCount)
             {
                 // endingText.text = "Right Wins";
-                PlayUIAnimation();
+                Invoke("PlayUIAnimation", 0.1f);
                 isInMatch = false;
             }
             else
             {
                 // endingText.text = "Right Wins the Round";
-                PlayUIAnimation();
+                Invoke("PlayUIAnimation", 0.1f);
                 Invoke("ResetRound", 8f);
             }
         }
@@ -106,13 +106,13 @@ public class GameManager : MonoBehaviour
             if (player1WinsCount == targetWinsCount)
             {
                 // endingText.text = "Left Wins";
-                PlayUIAnimation();
+                Invoke("PlayUIAnimation", 0.1f);
                 isInMatch = false;
             }
             else
             {
                 // endingText.text = "Left Wins the Round";
-                PlayUIAnimation();
+                Invoke("PlayUIAnimation", 0.1f);
                 Invoke("ResetRound", 8f);
             }
         }

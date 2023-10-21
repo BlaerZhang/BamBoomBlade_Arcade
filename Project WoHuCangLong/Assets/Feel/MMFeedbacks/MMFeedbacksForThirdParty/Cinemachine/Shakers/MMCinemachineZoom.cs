@@ -65,7 +65,7 @@ namespace MoreMountains.FeedbacksForThirdParty
 		protected virtual void Awake()
 		{
 			_virtualCamera = this.gameObject.GetComponent<Cinemachine.CinemachineVirtualCamera>();
-			_initialFieldOfView = _virtualCamera.m_Lens.FieldOfView;
+			_initialFieldOfView = _virtualCamera.m_Lens.OrthographicSize;
 		}	
         
 		/// <summary>
@@ -78,10 +78,10 @@ namespace MoreMountains.FeedbacksForThirdParty
 				return;
 			}
             
-			if (_virtualCamera.m_Lens.FieldOfView != _targetFieldOfView)
+			if (_virtualCamera.m_Lens.OrthographicSize != _targetFieldOfView)
 			{
 				_delta += GetDeltaTime() / _transitionDuration;
-				_virtualCamera.m_Lens.FieldOfView = Mathf.LerpUnclamped(_startFieldOfView, _targetFieldOfView, ZoomCurve.Evaluate(_delta));
+				_virtualCamera.m_Lens.OrthographicSize = Mathf.LerpUnclamped(_startFieldOfView, _targetFieldOfView, ZoomCurve.Evaluate(_delta));
 			}
 			else
 			{
@@ -127,7 +127,7 @@ namespace MoreMountains.FeedbacksForThirdParty
 			_mode = mode;
 
 			TimescaleMode = useUnscaledTime ? TimescaleModes.Unscaled : TimescaleModes.Scaled;
-			_startFieldOfView = _virtualCamera.m_Lens.FieldOfView;
+			_startFieldOfView = _virtualCamera.m_Lens.OrthographicSize;
 			_transitionDuration = transitionDuration;
 			_duration = duration;
 			_transitionDuration = transitionDuration;

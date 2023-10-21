@@ -31,6 +31,8 @@ public class HitDetect : MonoBehaviour
     private MMF_Player hitBodyFeedbackMedium;
     
     private MMF_Player hitBodyFeedbackLarge;
+    
+    private MMF_Player killFeedback;
 
     private MMF_Player hitWeaponFeedback;
 
@@ -63,6 +65,7 @@ public class HitDetect : MonoBehaviour
         hitBodyFeedbackSmall = GameObject.Find("Hit Body Feedback Small").GetComponent<MMF_Player>();
         hitBodyFeedbackMedium = GameObject.Find("Hit Body Feedback Medium").GetComponent<MMF_Player>();
         hitBodyFeedbackLarge = GameObject.Find("Hit Body Feedback Large").GetComponent<MMF_Player>();
+        killFeedback = GameObject.Find("Kill Feedback").GetComponent<MMF_Player>();
         hitWeaponFeedback = GameObject.Find("Hit Weapon Feedback").GetComponent<MMF_Player>();
         leftFlash = GameObject.Find("Left Flash").GetComponent<MMFlash>();
         rightFlash = GameObject.Find("Right Flash").GetComponent<MMFlash>();
@@ -126,9 +129,9 @@ public class HitDetect : MonoBehaviour
 
                     int playerIndex = DetectPlayer();
 
-                    DealDamage(playerIndex, damage); 
                     PlayHitFeedback(damage, hitPoint, playerIndex);
-                    
+                    DealDamage(playerIndex, damage);
+
                     print(damage + "||" + "Body Velocity: " + relativeBodyVelocity + "\n" + "Hit Velocity: " + hitVelocity);
                 }
 
@@ -293,44 +296,40 @@ public class HitDetect : MonoBehaviour
 
     void PlayHitFeedback(float damage, Vector3 hitPoint, int playerIndex)
     {
+        float currentHPBeforeHit;
         if (playerIndex == 1)
         {
             leftFlash.FlashID = 1;
             rightFlash.FlashID = 2;
+            currentHPBeforeHit = GameManager.instance.player1HP;
         }
         else
         {
             rightFlash.FlashID = 1;
             leftFlash.FlashID = 2;
+            currentHPBeforeHit = GameManager.instance.player2HP;
+        }
+
+        if (damage >= currentHPBeforeHit)
+        {
+            killFeedback.PlayFeedbacks();
         }
         
-        if (damage <= 20)
+        if (damage <= 15)
         {
             hitBodyFeedbackSmall.transform.position = hitPoint;
             hitBodyFeedbackSmall.PlayFeedbacks();
         }
-        else if (damage > 20 && damage <= 40)
+        else if (damage > 15 && damage <= 50)
         {
             hitBodyFeedbackMedium.transform.position = hitPoint;
             hitBodyFeedbackMedium.PlayFeedbacks();
         }
-        else if (damage > 40)
+        else if (damage > 50)
         {
             hitBodyFeedbackLarge.transform.position = hitPoint;
             hitBodyFeedbackLarge.PlayFeedbacks();
         }
     }
-
-    // void TrailSwitch()
-    // {
-    //     if (weaponRb2D.angularVelocity > 5f)
-    //     {
-    //         weaponTrail.enabled = true;
-    //     }
-    //     else
-    //     {
-    //         weaponTrail.enabled = false;
-    //     }
-    // }
 
 }
