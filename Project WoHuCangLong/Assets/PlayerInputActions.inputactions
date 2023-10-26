@@ -1,5 +1,5 @@
 {
-    "name": "PlayerInputActions",
+    "name": "Player1InputActions",
     "maps": [
         {
             "name": "Gameplay",
@@ -62,17 +62,6 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "9fc7b1a3-83f7-4959-93e5-98bf04eaa991",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "StickDeadzone",
-                    "groups": "Gamepad",
-                    "action": "WavingWeapon",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "2D Vector",
                     "id": "2260dfbc-8cd0-4bc1-8182-d85827e9058d",
                     "path": "2DVector",
@@ -129,12 +118,12 @@
                 },
                 {
                     "name": "",
-                    "id": "5c011320-6ade-4ea3-ad6b-510cdc3a131d",
-                    "path": "<Gamepad>/leftStick",
+                    "id": "9fc7b1a3-83f7-4959-93e5-98bf04eaa991",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "StickDeadzone",
                     "groups": "Gamepad",
-                    "action": "Bending",
+                    "action": "WavingWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -195,12 +184,12 @@
                 },
                 {
                     "name": "",
-                    "id": "44120748-8302-4dda-b167-7cce5d86a730",
-                    "path": "<Gamepad>/buttonSouth",
+                    "id": "5c011320-6ade-4ea3-ad6b-510cdc3a131d",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "StickDeadzone",
                     "groups": "Gamepad",
-                    "action": "Restart",
+                    "action": "Bending",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -211,6 +200,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44120748-8302-4dda-b167-7cce5d86a730",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Restart",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -302,11 +302,6 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
-                    "isOptional": false,
-                    "isOR": false
-                },
-                {
-                    "devicePath": "<Mouse>",
                     "isOptional": false,
                     "isOR": false
                 }
