@@ -56,7 +56,9 @@ public class GameManager : MonoBehaviour
 
     private TextMeshProUGUI countDownText;
     
-    // private Sequence countDownSequence;
+    private Sequence countDownSequence;
+
+    private Sequence tutorialSequence;
 
     private void Awake()
     {
@@ -87,6 +89,9 @@ public class GameManager : MonoBehaviour
 
         countDownText = GameObject.Find("Count Down Text").GetComponent<TextMeshProUGUI>();
         titleCam = GetComponentInChildren<CinemachineVirtualCamera>();
+        
+        CreateCountDownAnimation();
+        CreateTutorialAnimation();
     }
 
     private void Update()
@@ -152,7 +157,6 @@ public class GameManager : MonoBehaviour
     public void ResetRound()
     {
         isInRound = false;
-        isInMatch = false;
         // timer = countDownTime;
         player1HP = player2HP = 100;
         endingText.text = "";
@@ -160,7 +164,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Invoke("CanvasGetMainCam",0.01f);
         Invoke("PlayCountDownAnimation", 0.01f);
-        // Invoke("PlayStartMusic", 0.01f);
     }
 
     // public void RoundStartCountDown()
@@ -200,45 +203,45 @@ public class GameManager : MonoBehaviour
     // {
     //     
     // }
+    private void CreateCountDownAnimation()
+    {
+        countDownSequence = DOTween.Sequence();
+        countDownSequence
+            .Append(countDownText.transform.DOScale(0, 0))
+            .Append(countDownText.DOText("BAM", 0))
+            .Append(countDownText.transform.DOScale(1, 0.5f))
+            .AppendInterval(0.5f)
+            .Append(countDownText.transform.DOScale(0, 0))
+            .Append(countDownText.DOText("BOOM", 0))
+            .Append(countDownText.transform.DOScale(1, 0.5f))
+            .AppendInterval(0.5f)
+            .Append(countDownText.transform.DOScale(0, 0))
+            .Append(countDownText.DOText("BLADE!", 0))
+            .Append(countDownText.transform.DOScale(1, 0.5f))
+            .AppendInterval(0.5f)
+            .Append(countDownText.DOText("", 0))
+            .OnComplete((() =>
+            {
+                isInRound = true;
+                countDownSequence.Rewind();
+            }));
+    }
 
     public void PlayCountDownAnimation()
     {
         if (!isInTitle)
         {
-            Sequence countDownSequence = DOTween.Sequence();
-            countDownSequence
-                .Append(countDownText.transform.DOScale(0, 0))
-                .Append(countDownText.DOText("BAM",0))
-                .Append(countDownText.transform.DOScale(1, 0.5f))
-                .AppendInterval(0.5f)
-                .Append(countDownText.transform.DOScale(0, 0))
-                .Append(countDownText.DOText("BOOM",0))
-                .Append(countDownText.transform.DOScale(1, 0.5f))
-                .AppendInterval(0.5f)
-                .Append(countDownText.transform.DOScale(0, 0))
-                .Append(countDownText.DOText("BLADE!",0))
-                .Append(countDownText.transform.DOScale(1, 0.5f))
-                .AppendInterval(0.5f)
-                .Append(countDownText.DOText("",0))
-                .OnComplete((() =>
-                {
-                    isInMatch = true;
-                    isInRound = true;
-                }));
-        
             if (!countDownSequence.IsPlaying()) countDownSequence.Play();
-            // print("Animation Played");
-        
             GameObject.Find("612").GetComponent<AudioSource>().Play();
         }
     }
 
-    public void PlayTutorialAnimation()
+    private void CreateTutorialAnimation()
     {
-        Sequence tutorialSequence = DOTween.Sequence();
+        tutorialSequence = DOTween.Sequence();
         SpriteRenderer tutorial = GameObject.Find("Tutorial").GetComponent<SpriteRenderer>();
         tutorialSequence
-            .Append(tutorial.DOFade(0,0))
+            .Append(tutorial.DOFade(0, 0))
             .Append(tutorial.DOFade(1, 1f))
             .AppendInterval(3)
             .Append(tutorial.DOFade(0, 1f))
@@ -246,8 +249,12 @@ public class GameManager : MonoBehaviour
             {
                 isInTitle = false;
                 isInMatch = true;
+                tutorialSequence.Rewind();
             }));
+    }
 
+    public void PlayTutorialAnimation()
+    {
         if (!tutorialSequence.IsPlaying()) tutorialSequence.Play();
     }
 
