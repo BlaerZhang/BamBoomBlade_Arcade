@@ -12748,7 +12748,7 @@ GameObject:
   - component: {fileID: 714038155}
   - component: {fileID: 714038156}
   m_Layer: 0
-  m_Name: Tutorial Holder
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39552,7 +39552,7 @@ GameObject:
   - component: {fileID: 2016092967}
   - component: {fileID: 2016092966}
   m_Layer: 0
-  m_Name: Title Holder
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
