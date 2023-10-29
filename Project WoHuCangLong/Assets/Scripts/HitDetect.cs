@@ -105,7 +105,7 @@ public class HitDetect : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (GameManager.instance.isInRound && isHit == false)
+        if (GameManager.instance.isInRound && !isHit && GetComponentInParent<PlayerActions>().wavingVector2 != Vector2.zero)
         {
             WeaponContact(col);
             if (col.gameObject.name.Contains("Head") || col.gameObject.name.Contains("Body") ||

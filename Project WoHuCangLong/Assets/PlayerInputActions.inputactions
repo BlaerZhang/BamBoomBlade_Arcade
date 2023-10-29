@@ -1,5 +1,5 @@
 {
-    "name": "Player1InputActions",
+    "name": "PlayerInputActions",
     "maps": [
         {
             "name": "Gameplay",
@@ -31,24 +31,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "ClimbUp",
-                    "type": "Value",
-                    "id": "e18be69c-a85a-4f0b-9a1a-a18d9e178557",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "ClimbDown",
-                    "type": "Value",
-                    "id": "d4a187db-bc56-4b2f-8db2-70c91ea5cc50",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 },
                 {
                     "name": "Reload",
@@ -212,50 +194,6 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Restart",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e17e179a-90f9-475e-921c-7de1c0d94730",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "ClimbUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c0b0da2a-d016-4ac7-937b-cd223503673a",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "ClimbUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f8dd6d44-a954-403b-a14f-e095e738600e",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "ClimbDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a95645b8-3a5e-448a-bf83-4f6feb61afd9",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "ClimbDown",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

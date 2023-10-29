@@ -8,6 +8,8 @@ public class TrailManager : MonoBehaviour
 {
     private List<TrailRenderer> trails;
 
+    private PlayerActions playeractions;
+
     private Vector3 lastPosition = Vector3.zero;
 
     private float weaponSpeed = 0;
@@ -15,11 +17,12 @@ public class TrailManager : MonoBehaviour
     void Start()
     {
         trails = GetComponentsInChildren<TrailRenderer>().ToList();
+        playeractions = GetComponentInParent<PlayerActions>();
     }
     
     void Update()
     {
-        if (weaponSpeed > 7.5f)
+        if (weaponSpeed > 20f && playeractions.wavingVector2 != Vector2.zero)
         {
             foreach (var trailRenderer in trails)
             {

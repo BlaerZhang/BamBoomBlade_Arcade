@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Action Force
   m_EditorClassIdentifier: 
   bendingForceAmount: 150
-  wavingForceAmount: 50
-  climbingForceAmount: 0
+  wavingForceAmount: 75
+  climbingForceAmount: 50
   weaponContactForce: 0.2
   weaponContactBodyForce: 250
   climbLockThresholdDeltaAngle: 45

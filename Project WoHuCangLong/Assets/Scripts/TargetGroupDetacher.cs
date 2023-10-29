@@ -17,7 +17,7 @@ public class TargetGroupDetacher : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!GameManager.instance.isInRound && !isDetached)
+        if ((GameManager.instance.player1HP <= 0 || GameManager.instance.player2HP <= 0) && !isDetached)
         {
             tG.m_Targets[0].weight = 10;
             tG.m_Targets[0].radius = 1.5f;

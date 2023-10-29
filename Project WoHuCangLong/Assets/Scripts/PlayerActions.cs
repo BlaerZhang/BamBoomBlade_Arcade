@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -29,13 +30,13 @@ public class PlayerActions : MonoBehaviour
 
     public GameObject footGrabber;
 
-    private Vector2 bendingVector2;
+    [HideInInspector] public Vector2 bendingVector2;
 
     private float leftJoystickVerticalAmount;
 
     private float climbLockDeltaAngle;
 
-    private Vector2 wavingVector2;
+    [HideInInspector] public Vector2 wavingVector2;
 
     private float rightTriggerValue = 0;
 
@@ -77,7 +78,7 @@ public class PlayerActions : MonoBehaviour
             WavingWeapon();
             // ClimbUp();
             // ClimbDown();
-            ClimbDownAntiGravityForce();
+            ClimbUpAntiGravityForce();
         }
         GrabberLock();
     }
@@ -110,13 +111,21 @@ public class PlayerActions : MonoBehaviour
         }
     }
 
-    void ClimbDownAntiGravityForce()
+    void ClimbUpAntiGravityForce()
     {
-        if (climbLockDeltaAngle > 180 - actionForce.climbLockThresholdDeltaAngle)
+        if (climbLockDeltaAngle < actionForce.climbLockThresholdDeltaAngle)
         {
             foreach (Rigidbody2D rb2D in grabberRB2D)
             {
                 rb2D.AddRelativeForce(Vector2.up * actionForce.climbingForceAmount);
+            }
+        }
+        
+        if (climbLockDeltaAngle > 180 - actionForce.climbLockThresholdDeltaAngle)
+        {
+            foreach (Rigidbody2D rb2D in grabberRB2D)
+            {
+                rb2D.AddRelativeForce(Vector2.down * actionForce.climbingForceAmount);
             }
         }
     }
@@ -130,21 +139,32 @@ public class PlayerActions : MonoBehaviour
         // print(climbLockDeltaAngle);
         // print(leftJoystickVerticalAmount);
         // Debug.Log(bendingVector2);
+        if (GameManager.instance.isInTitle)
+        {
+            GameManager.instance.PlayTutorialAnimation();
+        }
     }
 
     public void OnWavingWeapon(InputAction.CallbackContext context)
     {
         wavingVector2 = context.ReadValue<Vector2>();
         // Debug.Log(wavingVector2);
+        if (GameManager.instance.isInTitle)
+        {
+            GameManager.instance.PlayTutorialAnimation();
+        }
     }
 
     public void OnRestart(InputAction.CallbackContext context)
     {
-        if (!GameManager.instance.isInMatch)
+        if (!GameManager.instance.isInMatch && !GameManager.instance.isInTitle)
         {
+            GameManager.instance.isInTitle = true;
+            GameManager.instance.isGameStart = false;
             GameManager.instance.ResetRound();
             GameManager.instance.player1WinsCount = 0;
             GameManager.instance.player2WinsCount = 0;
+            GameObject.Find("612").GetComponent<AudioSource>().Stop();
         }
     }
     
