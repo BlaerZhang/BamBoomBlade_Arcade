@@ -161,6 +161,8 @@ public class PlayerActions : MonoBehaviour
         {
             GameManager.instance.isInTitle = true;
             GameManager.instance.isGameStart = false;
+            GameManager.instance.titleCam.Priority = 12;
+            GameManager.instance.tutorialCam.Priority = 11;
             GameManager.instance.ResetRound();
             GameManager.instance.player1WinsCount = 0;
             GameManager.instance.player2WinsCount = 0;

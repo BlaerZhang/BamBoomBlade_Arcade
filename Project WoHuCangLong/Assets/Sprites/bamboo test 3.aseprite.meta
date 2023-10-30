@@ -140,7 +140,7 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: bamboo test 3_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -148,7 +148,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 6
-      height: 753
+      height: 1505
     spriteID: ae97665e7c403a74195a0880e621b3ae
     spriteBone: []
     spriteOutline: []
@@ -170,9 +170,9 @@ ScriptedImporter:
       frameIndex: 0
       cellRect:
         x: 19
-        y: 137
+        y: 409
         width: 6
-        height: 753
+        height: 1505
       spriteId: b9e662ddd8dff70498dfefaf07cac4ab
     linkedCells: []
     parentIndex: -1
@@ -223,4 +223,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 1024}
+  canvasSize: {x: 64, y: 2048}

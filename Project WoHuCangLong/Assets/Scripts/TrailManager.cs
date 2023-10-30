@@ -22,7 +22,7 @@ public class TrailManager : MonoBehaviour
     
     void Update()
     {
-        if (weaponSpeed > 20f && playeractions.wavingVector2 != Vector2.zero)
+        if (weaponSpeed > 10f && playeractions.wavingVector2 != Vector2.zero)
         {
             foreach (var trailRenderer in trails)
             {

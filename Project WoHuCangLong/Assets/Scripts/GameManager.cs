@@ -49,6 +49,9 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public CinemachineVirtualCamera titleCam;
+    
+    [HideInInspector]
+    public CinemachineVirtualCamera tutorialCam;
 
     // public float countDownTime = 3f;
 
@@ -59,6 +62,8 @@ public class GameManager : MonoBehaviour
     private Sequence countDownSequence;
 
     private Sequence tutorialSequence;
+    
+    // private Sequence fogSequence;
 
     private void Awake()
     {
@@ -88,7 +93,11 @@ public class GameManager : MonoBehaviour
         bodyHitMultiplier.Add("Leg", legMultiplier);
 
         countDownText = GameObject.Find("Count Down Text").GetComponent<TextMeshProUGUI>();
-        titleCam = GetComponentInChildren<CinemachineVirtualCamera>();
+        titleCam = GameObject.Find("Title Camera").GetComponent<CinemachineVirtualCamera>();
+        tutorialCam = GameObject.Find("Tutorial Camera").GetComponent<CinemachineVirtualCamera>();
+        
+        titleCam.Priority = 12;
+        tutorialCam.Priority = 11;
         
         CreateCountDownAnimation();
         CreateTutorialAnimation();
@@ -98,18 +107,15 @@ public class GameManager : MonoBehaviour
     {
         if (isInTitle)
         {
-            titleCam.Priority = 11;
+            // titleCam.Priority = 12;
+            // tutorialCam.Priority = 11;
         }
-        else
+        else if (!isGameStart)
         {
-            titleCam.Priority = 9;
-            if (!isGameStart)
-            {
-                isGameStart = true;
-                Invoke("PlayCountDownAnimation", 1.5f);
-                print("First Animation Played");
-                // timer = countDownTime + 1.5f;
-            }
+            isGameStart = true;
+            Invoke("PlayCountDownAnimation", 1.5f);
+            print("First Animation Played");
+            // timer = countDownTime + 1.5f;
         }
         
         // if (timer >= 0 && !isInTitle) 
@@ -240,13 +246,16 @@ public class GameManager : MonoBehaviour
     {
         tutorialSequence = DOTween.Sequence();
         SpriteRenderer tutorial = GameObject.Find("Tutorial").GetComponent<SpriteRenderer>();
+
         tutorialSequence
             .Append(tutorial.DOFade(0, 0))
+            .AppendInterval(2)
             .Append(tutorial.DOFade(1, 1f))
             .AppendInterval(3)
             .Append(tutorial.DOFade(0, 1f))
             .OnComplete((() =>
             {
+                tutorialCam.Priority = 9;
                 isInTitle = false;
                 isInMatch = true;
                 tutorialSequence.Rewind();
@@ -255,7 +264,20 @@ public class GameManager : MonoBehaviour
 
     public void PlayTutorialAnimation()
     {
-        if (!tutorialSequence.IsPlaying()) tutorialSequence.Play();
+        if (!tutorialSequence.IsPlaying())
+        {
+            Sequence fogSequence = DOTween.Sequence();
+            GameObject fog = GameObject.Find("Fog");
+            fogSequence
+                .Append(fog.transform.DOMoveX(3.5f, 0))
+                .Append(fog.GetComponent<SpriteRenderer>().DOFade(0,0))
+                .Append(fog.transform.DOMoveX(-4f, 10f))
+                .Insert(1.5f, fog.GetComponent<SpriteRenderer>().DOFade(1f,1));
+            
+            tutorialSequence.Play();
+            fogSequence.Play();
+            titleCam.Priority = 9;
+        }
     }
 
     public void PlayUIAnimation()
