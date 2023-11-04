@@ -15,11 +15,14 @@ public class Grounded : MonoBehaviour
     private TextMeshProUGUI subText;
 
     private TextMeshProUGUI scoreText;
+
+    private TextMeshProUGUI endingText;
     
     void Start()
     {
         subText = GameObject.Find("Sub Text").GetComponent<TextMeshProUGUI>();
         scoreText = GameObject.Find("Score Text").GetComponent<TextMeshProUGUI>();
+        endingText = GameObject.Find("Ending Text").GetComponent<TextMeshProUGUI>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -34,14 +37,18 @@ public class Grounded : MonoBehaviour
 
     private void ShowResult()
     {
-        scoreText.text += GameManager.instance.player1WinsCount + "-" + GameManager.instance.player2WinsCount;
+        scoreText.text = GameManager.instance.player1WinsCount + "-" + GameManager.instance.player2WinsCount;
         if (GameManager.instance.isInMatch)
         {
-            subText.text += "Get Ready for the Next Round";
+            subText.text = "Get Ready for the Next Round";
         }
         else
         {
-            subText.text += "Press A or Space to Start a New Match";
+            if (GameManager.instance.player1WinsCount == GameManager.instance.targetWinsCount)
+                endingText.text = "Left Wins";
+            if (GameManager.instance.player2WinsCount == GameManager.instance.targetWinsCount)
+                endingText.text = "Right Wins";
+            // subText.text = "Press A or Space to Start a New Match";
         }
     }
 }

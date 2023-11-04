@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject jipoUI;
 
+    private GameObject roundIndicator;
+
     [HideInInspector]
     public CinemachineVirtualCamera titleCam;
     
@@ -95,6 +97,7 @@ public class GameManager : MonoBehaviour
         countDownText = GameObject.Find("Count Down Text").GetComponent<TextMeshProUGUI>();
         titleCam = GameObject.Find("Title Camera").GetComponent<CinemachineVirtualCamera>();
         tutorialCam = GameObject.Find("Tutorial Camera").GetComponent<CinemachineVirtualCamera>();
+        roundIndicator = GameObject.Find("Round Indicator");
         
         titleCam.Priority = 12;
         tutorialCam.Priority = 11;
@@ -105,6 +108,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (player1WinsCount + player2WinsCount == 0) roundIndicator.SetActive(isInRound);
+        else roundIndicator.SetActive(!isInTitle && !countDownSequence.IsPlaying());
+
+
         if (isInTitle)
         {
             // titleCam.Priority = 12;
@@ -131,6 +138,7 @@ public class GameManager : MonoBehaviour
             {
                 // endingText.text = "Right Wins";
                 Invoke("PlayUIAnimation", 0.1f);
+                Invoke("ResetMatch", 8f);
                 isInMatch = false;
             }
             else
@@ -149,6 +157,7 @@ public class GameManager : MonoBehaviour
             {
                 // endingText.text = "Left Wins";
                 Invoke("PlayUIAnimation", 0.1f);
+                Invoke("ResetMatch", 8f);
                 isInMatch = false;
             }
             else
@@ -168,8 +177,20 @@ public class GameManager : MonoBehaviour
         endingText.text = "";
         jipoUI.transform.localScale = Vector3.zero;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Invoke("CanvasGetMainCam",0.01f);
+        // Invoke("CanvasGetMainCam",0.01f);
         Invoke("PlayCountDownAnimation", 0.01f);
+    }
+
+    public void ResetMatch()
+    {
+        ResetRound();
+        isInTitle = true;
+        isGameStart = false;
+        titleCam.Priority = 12;
+        tutorialCam.Priority = 11;
+        player1WinsCount = 0;
+        player2WinsCount = 0;
+        GameObject.Find("612").GetComponent<AudioSource>().Stop();
     }
 
     // public void RoundStartCountDown()
@@ -226,11 +247,11 @@ public class GameManager : MonoBehaviour
             .Append(countDownText.transform.DOScale(1, 0.5f))
             .AppendInterval(0.5f)
             .Append(countDownText.DOText("", 0))
-            .OnComplete((() =>
+            .OnComplete(() =>
             {
                 isInRound = true;
                 countDownSequence.Rewind();
-            }));
+            });
     }
 
     public void PlayCountDownAnimation()
@@ -253,13 +274,13 @@ public class GameManager : MonoBehaviour
             .Append(tutorial.DOFade(1, 1f))
             .AppendInterval(3)
             .Append(tutorial.DOFade(0, 1f))
-            .OnComplete((() =>
+            .OnComplete(() =>
             {
                 tutorialCam.Priority = 9;
                 isInTitle = false;
                 isInMatch = true;
                 tutorialSequence.Rewind();
-            }));
+            });
     }
 
     public void PlayTutorialAnimation()

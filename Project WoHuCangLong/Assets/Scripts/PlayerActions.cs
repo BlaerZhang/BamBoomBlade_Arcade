@@ -139,34 +139,24 @@ public class PlayerActions : MonoBehaviour
         // print(climbLockDeltaAngle);
         // print(leftJoystickVerticalAmount);
         // Debug.Log(bendingVector2);
-        if (GameManager.instance.isInTitle)
-        {
-            GameManager.instance.PlayTutorialAnimation();
-        }
+            if (context.canceled && GameManager.instance.isInTitle) GameManager.instance.PlayTutorialAnimation();
     }
 
     public void OnWavingWeapon(InputAction.CallbackContext context)
     {
         wavingVector2 = context.ReadValue<Vector2>();
         // Debug.Log(wavingVector2);
-        if (GameManager.instance.isInTitle)
-        {
-            GameManager.instance.PlayTutorialAnimation();
-        }
+        if (context.canceled && GameManager.instance.isInTitle) GameManager.instance.PlayTutorialAnimation();
     }
 
     public void OnRestart(InputAction.CallbackContext context)
     {
-        if (!GameManager.instance.isInMatch && !GameManager.instance.isInTitle)
+        if (context.canceled)
         {
-            GameManager.instance.isInTitle = true;
-            GameManager.instance.isGameStart = false;
-            GameManager.instance.titleCam.Priority = 12;
-            GameManager.instance.tutorialCam.Priority = 11;
-            GameManager.instance.ResetRound();
-            GameManager.instance.player1WinsCount = 0;
-            GameManager.instance.player2WinsCount = 0;
-            GameObject.Find("612").GetComponent<AudioSource>().Stop();
+            if (!GameManager.instance.isInMatch && !GameManager.instance.isInTitle)
+            {
+                GameManager.instance.ResetMatch();
+            }
         }
     }
     
