@@ -102,7 +102,7 @@ namespace MoreMountains.FeedbacksForThirdParty
 		/// Use this method to shake the camera for the specified duration (in seconds) with the default amplitude and frequency
 		/// </summary>
 		/// <param name="duration">Duration.</param>
-		public virtual void ShakeCamera(float duration, bool infinite, bool useUnscaledTime = false)
+		public virtual void ShakeCamera(float duration, bool infinite, bool useUnscaledTime)
 		{
 			StartCoroutine(ShakeCameraCo(duration, DefaultShakeAmplitude, DefaultShakeFrequency, infinite, useUnscaledTime));
 		}
@@ -113,7 +113,7 @@ namespace MoreMountains.FeedbacksForThirdParty
 		/// <param name="duration">Duration.</param>
 		/// <param name="amplitude">Amplitude.</param>
 		/// <param name="frequency">Frequency.</param>
-		public virtual void ShakeCamera(float duration, float amplitude, float frequency, bool infinite, bool useUnscaledTime = false)
+		public virtual void ShakeCamera(float duration, float amplitude, float frequency, bool infinite, bool useUnscaledTime)
 		{
 			if (_shakeCoroutine != null)
 			{
@@ -136,7 +136,8 @@ namespace MoreMountains.FeedbacksForThirdParty
 			_timescaleMode = useUnscaledTime ? TimescaleModes.Unscaled : TimescaleModes.Scaled;
 			if (!infinite)
 			{
-				yield return new WaitForSeconds(duration);
+				if (_timescaleMode == TimescaleModes.Scaled) yield return new WaitForSeconds(duration);
+				if (_timescaleMode == TimescaleModes.Unscaled) yield return new WaitForSecondsRealtime(duration);
 				CameraReset();
 			}                        
 		}

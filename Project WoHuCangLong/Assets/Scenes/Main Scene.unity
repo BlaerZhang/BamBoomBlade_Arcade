@@ -508,6 +508,229 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &23165594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23165598}
+  - component: {fileID: 23165597}
+  - component: {fileID: 23165596}
+  - component: {fileID: 23165595}
+  m_Layer: 5
+  m_Name: Pixel VFX Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &23165595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23165594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &23165596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23165594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 2
+  m_MatchWidthOrHeight: 1
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &23165597
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23165594}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 20
+  m_PixelPerfect: 1
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 95
+  m_TargetDisplay: 0
+--- !u!224 &23165598
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23165594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1906452009}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &47403740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47403741}
+  - component: {fileID: 47403744}
+  - component: {fileID: 47403745}
+  - component: {fileID: 47403742}
+  m_Layer: 0
+  m_Name: Pixel VFX Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47403741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47403740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47403742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47403740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!20 &47403744
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47403740}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 131072
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: 2fe8ea33e1b702345819cb69020b2a3e, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &47403745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47403740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ceef48948c6e9044a6a5d17020e9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &50212746
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +1130,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &78702254
 GameObject:
@@ -1509,7 +1732,7 @@ Transform:
   - {fileID: 1906289992}
   - {fileID: 15287401}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &89678012
 PrefabInstance:
@@ -7987,7 +8210,7 @@ Transform:
   - {fileID: 1692050700}
   - {fileID: 1689493418}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &389659153
 GameObject:
@@ -8083,7 +8306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395011151}
   - component: {fileID: 395011152}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Trail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8357,12 +8580,12 @@ MonoBehaviour:
   AutoChangeDirectionOnEnd: 0
   AutoPlayOnStart: 0
   AutoPlayOnEnable: 0
-  ForceTimescaleMode: 0
+  ForceTimescaleMode: 1
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
-  DisplayFullDurationDetails: 0
+  DisplayFullDurationDetails: 1
   PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
@@ -8496,7 +8719,7 @@ MonoBehaviour:
         DebugActive: 0
         RepeatUntilStopped: 0
         CameraShakeProperties:
-          Duration: 0.4
+          Duration: 0.6
           Amplitude: 3
           Frequency: 0.5
           AmplitudeX: 3
@@ -8602,9 +8825,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           m_ImpulseDuration: 0.25
-          m_ImpulseType: 0
+          m_ImpulseType: 3
           m_DissipationRate: 0
-          m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+          m_RawSignal: {fileID: 11400000, guid: c424bb69a3e1dd54f93ff487320402e1, type: 2}
           m_AmplitudeGain: 1
           m_FrequencyGain: 1
           m_RepeatMode: 0
@@ -8624,7 +8847,7 @@ MonoBehaviour:
               m_RotationOrder: 4
             m_AttackTime: 0
             m_SustainTime: 0.3
-            m_DecayTime: 0.2
+            m_DecayTime: 0
             m_ScaleWithImpact: 1
             m_HoldForever: 0
           m_ImpactRadius: 100
@@ -8632,7 +8855,7 @@ MonoBehaviour:
           m_DissipationMode: 2
           m_DissipationDistance: 100
           m_PropagationSpeed: 343
-        Velocity: {x: 0.02, y: 0.02, z: 0}
+        Velocity: {x: 0, y: 2, z: 0}
         ClearImpulseOnStop: 1
     - rid: 7244429297954586624
       type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
@@ -9420,7 +9643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438373068}
   - component: {fileID: 438373069}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Trail (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10859,7 +11082,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 262135
+    m_Bits: 131063
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -10886,6 +11109,7 @@ Transform:
   - {fileID: 2077382840}
   - {fileID: 1980812875}
   - {fileID: 310896922}
+  - {fileID: 47403741}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12798,7 +13022,7 @@ Transform:
   - {fileID: 335514576}
   - {fileID: 2127924304}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658767670
 GameObject:
@@ -13482,7 +13706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724340994}
   - component: {fileID: 724340995}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Trail (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14320,8 +14544,8 @@ MonoBehaviour:
         m_Calls: []
   DebugActive: 0
   FeedbacksList:
-  - rid: 7244429281352220673
   - rid: 7244429281352220678
+  - rid: 7244429281352220673
   - rid: 7244429297954586625
   - rid: 7244429638958317570
   - rid: 1192481317156028417
@@ -14505,7 +14729,7 @@ MonoBehaviour:
           m_DissipationMode: 2
           m_DissipationDistance: 100
           m_PropagationSpeed: 343
-        Velocity: {x: 0.3, y: 0.3, z: 0}
+        Velocity: {x: 0, y: 0.5, z: 0}
         ClearImpulseOnStop: 1
     - rid: 7244429297954586625
       type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
@@ -15678,7 +15902,7 @@ GameObject:
   - component: {fileID: 834918711}
   - component: {fileID: 834918713}
   - component: {fileID: 834918712}
-  m_Layer: 10
+  m_Layer: 17
   m_Name: Rope (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17236,12 +17460,12 @@ MonoBehaviour:
   AutoChangeDirectionOnEnd: 0
   AutoPlayOnStart: 0
   AutoPlayOnEnable: 0
-  ForceTimescaleMode: 0
+  ForceTimescaleMode: 1
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
-  DisplayFullDurationDetails: 0
+  DisplayFullDurationDetails: 1
   PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
@@ -17320,7 +17544,7 @@ MonoBehaviour:
         DebugActive: 0
         RepeatUntilStopped: 0
         CameraShakeProperties:
-          Duration: 0.15
+          Duration: 0.3
           Amplitude: 2
           Frequency: 0.5
           AmplitudeX: 2
@@ -17426,10 +17650,10 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           m_ImpulseDuration: 0.1
-          m_ImpulseType: 0
+          m_ImpulseType: 3
           m_DissipationRate: 0
-          m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-          m_AmplitudeGain: 1
+          m_RawSignal: {fileID: 11400000, guid: c424bb69a3e1dd54f93ff487320402e1, type: 2}
+          m_AmplitudeGain: 0.6666667
           m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 0
@@ -17447,8 +17671,8 @@ MonoBehaviour:
               m_PostInfinity: 2
               m_RotationOrder: 4
             m_AttackTime: 0
-            m_SustainTime: 0.3
-            m_DecayTime: 0.2
+            m_SustainTime: 0.15
+            m_DecayTime: 0
             m_ScaleWithImpact: 1
             m_HoldForever: 0
           m_ImpactRadius: 100
@@ -17456,7 +17680,7 @@ MonoBehaviour:
           m_DissipationMode: 2
           m_DissipationDistance: 100
           m_PropagationSpeed: 343
-        Velocity: {x: 0.02, y: 0.02, z: 0}
+        Velocity: {x: 0, y: 2, z: 0}
         ClearImpulseOnStop: 1
     - rid: 7244429297954586624
       type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
@@ -21156,12 +21380,12 @@ MonoBehaviour:
   AutoChangeDirectionOnEnd: 0
   AutoPlayOnStart: 0
   AutoPlayOnEnable: 0
-  ForceTimescaleMode: 0
+  ForceTimescaleMode: 1
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
-  DisplayFullDurationDetails: 0
+  DisplayFullDurationDetails: 1
   PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
@@ -21296,7 +21520,7 @@ MonoBehaviour:
         DebugActive: 0
         RepeatUntilStopped: 0
         CameraShakeProperties:
-          Duration: 0.6
+          Duration: 0.9
           Amplitude: 3
           Frequency: 0.5
           AmplitudeX: 3
@@ -21402,11 +21626,11 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           m_ImpulseDuration: 0.75
-          m_ImpulseType: 0
+          m_ImpulseType: 3
           m_DissipationRate: 0
-          m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+          m_RawSignal: {fileID: 11400000, guid: c424bb69a3e1dd54f93ff487320402e1, type: 2}
           m_AmplitudeGain: 1
-          m_FrequencyGain: 5
+          m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 0
           m_TimeEnvelope:
@@ -21423,8 +21647,8 @@ MonoBehaviour:
               m_PostInfinity: 2
               m_RotationOrder: 4
             m_AttackTime: 0
-            m_SustainTime: 0.3
-            m_DecayTime: 0.2
+            m_SustainTime: 0.6
+            m_DecayTime: 0
             m_ScaleWithImpact: 1
             m_HoldForever: 0
           m_ImpactRadius: 100
@@ -21432,7 +21656,7 @@ MonoBehaviour:
           m_DissipationMode: 2
           m_DissipationDistance: 100
           m_PropagationSpeed: 343
-        Velocity: {x: 0.05, y: 0.05, z: 0}
+        Velocity: {x: 0, y: 2, z: 0}
         ClearImpulseOnStop: 1
     - rid: 7244429297954586624
       type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
@@ -26335,7 +26559,7 @@ GameObject:
   - component: {fileID: 1346750845}
   - component: {fileID: 1346750846}
   - component: {fileID: 1346750847}
-  m_Layer: 6
+  m_Layer: 17
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27171,7 +27395,7 @@ GameObject:
   - component: {fileID: 1373972323}
   - component: {fileID: 1373972325}
   - component: {fileID: 1373972324}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28120,7 +28344,7 @@ Transform:
   - {fileID: 608494773}
   - {fileID: 1429182770}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401256694
 GameObject:
@@ -28205,7 +28429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404357046}
   - component: {fileID: 1404357047}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Trail (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29974,7 +30198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1482705704}
   - component: {fileID: 1482705705}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32550,7 +32774,7 @@ GameObject:
   - component: {fileID: 1623375431}
   - component: {fileID: 1623375432}
   - component: {fileID: 1623375433}
-  m_Layer: 6
+  m_Layer: 17
   m_Name: Rope (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32939,7 +33163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644683483}
   - component: {fileID: 1644683484}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Trail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34209,7 +34433,7 @@ GameObject:
   - component: {fileID: 1701646303}
   - component: {fileID: 1701646305}
   - component: {fileID: 1701646304}
-  m_Layer: 10
+  m_Layer: 17
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36254,7 +36478,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818269860
 GameObject:
@@ -36898,12 +37122,12 @@ MonoBehaviour:
   AutoChangeDirectionOnEnd: 0
   AutoPlayOnStart: 0
   AutoPlayOnEnable: 0
-  ForceTimescaleMode: 0
+  ForceTimescaleMode: 1
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
-  DisplayFullDurationDetails: 0
+  DisplayFullDurationDetails: 1
   PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
@@ -36931,82 +37155,25 @@ MonoBehaviour:
         m_Calls: []
   DebugActive: 0
   FeedbacksList:
-  - rid: 4680067003169898496
-  - rid: 7244429281352220678
-  - rid: 7244429281352220673
-  - rid: 7244429484784353281
-  - rid: 7244429297954586624
-  - rid: 7244429549407830016
-  - rid: 7244429545407250432
-  - rid: 3640321405999120385
+  - rid: 1245583060105691136
+  - rid: 1245583060105691137
+  - rid: 1245583060105691138
+  - rid: 1245583060105691139
+  - rid: 1245583060105691140
+  - rid: 1245583060105691141
+  - rid: 1245583060105691142
+  - rid: 1245583060105691143
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   ForceStopFeedbacksOnDisable: 1
   references:
     version: 2
     RefIds:
-    - rid: 3640321405999120385
-      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
-      data:
-        Active: 0
-        UniqueID: -1264793252
-        Label: Sound
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 1
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        RandomizeOutput: 0
-        RandomMultiplier: {x: 0.8, y: 1}
-        RandomizeDuration: 0
-        RandomDurationMultiplier: {x: 0.5, y: 2}
-        Owner: {fileID: 1842630813}
-        DebugActive: 0
-        Sfx: {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
-        RandomSfx:
-        - {fileID: 8300000, guid: 4b486ea29d57bc049bf8afa9312d8c1f, type: 3}
-        - {fileID: 8300000, guid: e19622e5a2f5d6842b90c9429fca2e6b, type: 3}
-        - {fileID: 8300000, guid: 5beac5800b889874cae740f8cc677240, type: 3}
-        - {fileID: 8300000, guid: b9b095df3eb19fe4ebef3d170434b618, type: 3}
-        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
-        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
-        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
-        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
-        TestPlayButton:
-          ButtonText: Debug Play Sound
-        TestStopButton:
-          ButtonText: Debug Stop Sound
-        PlayMethod: 1
-        PoolSize: 10
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
-        SfxAudioMixerGroup: {fileID: 0}
-        Priority: 128
-    - rid: 4680067003169898496
+    - rid: 1245583060105691136
       type: {class: MMF_CameraShake, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 0
-        UniqueID: -1069042762
+        UniqueID: 1829560474
         Label: Camera Shake
         Channel: 0
         Chance: 100
@@ -37045,66 +37212,11 @@ MonoBehaviour:
           AmplitudeX: 3
           AmplitudeY: 3
           AmplitudeZ: 0
-    - rid: 7244429281352220673
-      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
-      data:
-        Active: 0
-        UniqueID: -419994541
-        Label: Sound
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 1
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        RandomizeOutput: 0
-        RandomMultiplier: {x: 0.8, y: 1}
-        RandomizeDuration: 0
-        RandomDurationMultiplier: {x: 0.5, y: 2}
-        Owner: {fileID: 1842630813}
-        DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 959d546fede2d444198a1dca7e9f902b, type: 3}
-        - {fileID: 8300000, guid: 56fda8cfd6586b748bbd28594e34aa81, type: 3}
-        - {fileID: 8300000, guid: 17b1ad1ddf604ad4ea9bb43e557d2ebd, type: 3}
-        - {fileID: 8300000, guid: adfeb62800336e7469d91b34f14c5da8, type: 3}
-        - {fileID: 8300000, guid: f0ea44ac44ce8ab42bb20ad5eb1fd001, type: 3}
-        - {fileID: 8300000, guid: 823029e8de15d5a4baa66111461e5791, type: 3}
-        TestPlayButton:
-          ButtonText: Debug Play Sound
-        TestStopButton:
-          ButtonText: Debug Stop Sound
-        PlayMethod: 2
-        PoolSize: 10
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
-        SfxAudioMixerGroup: {fileID: 0}
-        Priority: 128
-    - rid: 7244429281352220678
+    - rid: 1245583060105691137
       type: {class: MMF_CinemachineImpulse, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.Cinemachine}
       data:
         Active: 0
-        UniqueID: -1059424099
+        UniqueID: -2104582010
         Label: Cinemachine Impulse
         Channel: 0
         Chance: 100
@@ -37177,11 +37289,105 @@ MonoBehaviour:
           m_PropagationSpeed: 343
         Velocity: {x: 0.05, y: 0.05, z: 0}
         ClearImpulseOnStop: 1
-    - rid: 7244429297954586624
+    - rid: 1245583060105691138
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 0
+        UniqueID: -949476238
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 1
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1842630813}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: 959d546fede2d444198a1dca7e9f902b, type: 3}
+        - {fileID: 8300000, guid: 56fda8cfd6586b748bbd28594e34aa81, type: 3}
+        - {fileID: 8300000, guid: 17b1ad1ddf604ad4ea9bb43e557d2ebd, type: 3}
+        - {fileID: 8300000, guid: adfeb62800336e7469d91b34f14c5da8, type: 3}
+        - {fileID: 8300000, guid: f0ea44ac44ce8ab42bb20ad5eb1fd001, type: 3}
+        - {fileID: 8300000, guid: 823029e8de15d5a4baa66111461e5791, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 2
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
+    - rid: 1245583060105691139
+      type: {class: MMF_Flash, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 0
+        UniqueID: 2072519247
+        Label: Flash
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 1
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1842630813}
+        DebugActive: 0
+        FlashColor: {r: 1, g: 1, b: 1, a: 1}
+        FlashDuration: 0.3
+        FlashAlpha: 0.9
+        FlashID: 1
+    - rid: 1245583060105691140
       type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 0
-        UniqueID: -1251639336
+        UniqueID: 407534249
         Label: Particles Instantiation
         Channel: 0
         Chance: 100
@@ -37228,12 +37434,12 @@ MonoBehaviour:
         NestParticles: 1
         ApplyRotation: 0
         ApplyScale: 0
-    - rid: 7244429484784353281
-      type: {class: MMF_Flash, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+    - rid: 1245583060105691141
+      type: {class: MMF_TimescaleModifier, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 0
-        UniqueID: 455688568
-        Label: Flash
+        Active: 1
+        UniqueID: 1347662479
+        Label: Timescale Modifier
         Channel: 0
         Chance: 100
         DisplayColor: {r: 0, g: 0, b: 0, a: 1}
@@ -37263,15 +37469,17 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 1842630813}
         DebugActive: 0
-        FlashColor: {r: 1, g: 1, b: 1, a: 1}
-        FlashDuration: 0.3
-        FlashAlpha: 0.9
-        FlashID: 1
-    - rid: 7244429545407250432
+        Mode: 0
+        TimeScale: 0.1
+        TimeScaleDuration: 2.5
+        TimeScaleLerp: 0
+        TimeScaleLerpSpeed: 1
+        ResetTimescaleOnStop: 0
+    - rid: 1245583060105691142
       type: {class: MMF_FreezeFrame, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 0
-        UniqueID: -1968132086
+        UniqueID: -1016099289
         Label: Freeze Frame
         Channel: 0
         Chance: 100
@@ -37304,12 +37512,12 @@ MonoBehaviour:
         DebugActive: 0
         FreezeFrameDuration: 0.6
         MinimumTimescaleThreshold: 0.1
-    - rid: 7244429549407830016
-      type: {class: MMF_TimescaleModifier, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+    - rid: 1245583060105691143
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
       data:
-        Active: 1
-        UniqueID: -1180697377
-        Label: Timescale Modifier
+        Active: 0
+        UniqueID: 1641336630
+        Label: Sound
         Channel: 0
         Chance: 100
         DisplayColor: {r: 0, g: 0, b: 0, a: 1}
@@ -37339,12 +37547,28 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 1842630813}
         DebugActive: 0
-        Mode: 0
-        TimeScale: 0.09
-        TimeScaleDuration: 2.5
-        TimeScaleLerp: 0
-        TimeScaleLerpSpeed: 1
-        ResetTimescaleOnStop: 0
+        Sfx: {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        RandomSfx:
+        - {fileID: 8300000, guid: 4b486ea29d57bc049bf8afa9312d8c1f, type: 3}
+        - {fileID: 8300000, guid: e19622e5a2f5d6842b90c9429fca2e6b, type: 3}
+        - {fileID: 8300000, guid: 5beac5800b889874cae740f8cc677240, type: 3}
+        - {fileID: 8300000, guid: b9b095df3eb19fe4ebef3d170434b618, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        - {fileID: 8300000, guid: adab50814aad5204caa1a533987d6ed7, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 1
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
 --- !u!1 &1849439745
 GameObject:
   m_ObjectHideFlags: 0
@@ -38444,6 +38668,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1906452008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906452009}
+  - component: {fileID: 1906452011}
+  - component: {fileID: 1906452010}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1906452009
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906452008}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 23165598}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1906452010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906452008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 2fe8ea33e1b702345819cb69020b2a3e, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1906452011
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906452008}
+  m_CullTransparentMesh: 1
 --- !u!1 &1908162367
 GameObject:
   m_ObjectHideFlags: 0
@@ -41010,7 +41307,7 @@ Transform:
   - {fileID: 2048502542}
   - {fileID: 1656150990}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2022552529
 GameObject:
@@ -41138,7 +41435,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035167485
 GameObject:

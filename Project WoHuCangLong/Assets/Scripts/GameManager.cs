@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Cinemachine;
 using DG.Tweening;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -78,6 +79,10 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        Cursor.visible = false;
+        Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+        QualitySettings.vSyncCount = 1;
     }
 
     void Start()
