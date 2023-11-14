@@ -136,15 +136,17 @@ public class PlayerActions : MonoBehaviour
         // rb2D.AddForce(forceAmount * inputVector, ForceMode2D.Force);
         bendingVector2 = context.ReadValue<Vector2>();
         leftJoystickVerticalAmount = bendingVector2.y;
+        GameManager.instance.ResetTimeoutTimer();
         // print(climbLockDeltaAngle);
         // print(leftJoystickVerticalAmount);
         // Debug.Log(bendingVector2);
-            if (context.canceled && GameManager.instance.isInTitle) GameManager.instance.PlayTutorialAnimation();
+        if (context.canceled && GameManager.instance.isInTitle) GameManager.instance.PlayTutorialAnimation();
     }
 
     public void OnWavingWeapon(InputAction.CallbackContext context)
     {
         wavingVector2 = context.ReadValue<Vector2>();
+        GameManager.instance.ResetTimeoutTimer();
         // Debug.Log(wavingVector2);
         if (context.canceled && GameManager.instance.isInTitle) GameManager.instance.PlayTutorialAnimation();
     }

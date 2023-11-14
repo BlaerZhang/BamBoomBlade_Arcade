@@ -65,6 +65,10 @@ public class GameManager : MonoBehaviour
     private Sequence countDownSequence;
 
     private Sequence tutorialSequence;
+
+    public float timeoutTime;
+
+    private float timeoutTimer;
     
     // private Sequence fogSequence;
 
@@ -109,10 +113,13 @@ public class GameManager : MonoBehaviour
         
         CreateCountDownAnimation();
         CreateTutorialAnimation();
+        ResetTimeoutTimer();
     }
 
     private void Update()
     {
+        CountDownTimeoutTime();
+        
         if (player1WinsCount + player2WinsCount == 0) roundIndicator.SetActive(isInRound);
         else roundIndicator.SetActive(!isInTitle && !countDownSequence.IsPlaying());
 
@@ -310,6 +317,21 @@ public class GameManager : MonoBehaviour
     {
         Tween jipoTween = jipoUI.transform.DOScale(Vector3.one, 1f).SetUpdate(true);
         jipoTween.Play();
+    }
+
+    public void CountDownTimeoutTime()
+    {
+        timeoutTimer -= Time.deltaTime;
+        if (timeoutTimer <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            Destroy(gameObject);
+        }
+    }
+
+    public void ResetTimeoutTimer()
+    {
+        timeoutTimer = timeoutTime;
     }
 
     public void CanvasGetMainCam()

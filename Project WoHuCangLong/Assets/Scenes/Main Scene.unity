@@ -8022,6 +8022,7 @@ MonoBehaviour:
   jipoUI: {fileID: 1631715593}
   titleCam: {fileID: 0}
   tutorialCam: {fileID: 0}
+  timeoutTime: 60
 --- !u!4 &360066123
 Transform:
   m_ObjectHideFlags: 0
