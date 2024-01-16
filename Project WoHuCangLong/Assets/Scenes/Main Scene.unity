@@ -602,7 +602,7 @@ RectTransform:
   m_Children:
   - {fileID: 1906452009}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1130,7 +1130,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &78702254
 GameObject:
@@ -1732,7 +1732,7 @@ Transform:
   - {fileID: 1906289992}
   - {fileID: 15287401}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &89678012
 PrefabInstance:
@@ -2413,7 +2413,7 @@ Transform:
   - {fileID: 635252204}
   - {fileID: 1945694032}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117967275
 GameObject:
@@ -4277,7 +4277,7 @@ RectTransform:
   - {fileID: 840178388}
   - {fileID: 1217976596}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8041,6 +8041,7 @@ Transform:
   - {fileID: 714038155}
   - {fileID: 1614218653}
   - {fileID: 1371043372}
+  - {fileID: 990749985}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8211,7 +8212,7 @@ Transform:
   - {fileID: 1692050700}
   - {fileID: 1689493418}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &389659153
 GameObject:
@@ -11372,7 +11373,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 999
+  m_SortingOrder: 0
   m_Sprite: {fileID: -3762206970410896317, guid: 26f1088a28b9057498be2dcb2c114f88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13023,7 +13024,7 @@ Transform:
   - {fileID: 335514576}
   - {fileID: 2127924304}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658767670
 GameObject:
@@ -18742,13 +18743,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990749983}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 360066123}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991863580
 GameObject:
@@ -19630,7 +19631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: f5940635e4e1516479e884abd34aa64d, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: a7c805eb0f346eb4bbef559cf6255855, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -19708,7 +19709,7 @@ MonoBehaviour:
     m_ActionId: 81565b63-8607-4f15-82c7-5110d3e3a543
     m_ActionName: Gameplay/Reload[/Keyboard/r,/XInputControllerWindows/dpad/down]
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -25306,7 +25307,7 @@ RectTransform:
   m_Children:
   - {fileID: 1180276951}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26295,7 +26296,7 @@ RectTransform:
   - {fileID: 1523631056}
   - {fileID: 79645886}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26853,7 +26854,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 0
   m_Sprite: {fileID: -3762206970410896317, guid: 26f1088a28b9057498be2dcb2c114f88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -27280,7 +27281,7 @@ Transform:
   - {fileID: 520025652}
   - {fileID: 1046577865}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1371043371
 GameObject:
@@ -28429,7 +28430,7 @@ Transform:
   - {fileID: 608494773}
   - {fileID: 1429182770}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401256694
 GameObject:
@@ -30271,7 +30272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1482705703
 GameObject:
@@ -31866,7 +31867,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1572800639
 GameObject:
@@ -35675,7 +35676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 0a30e77a77de5c94db0bacf36f122dec, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: a7c805eb0f346eb4bbef559cf6255855, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -35753,7 +35754,7 @@ MonoBehaviour:
     m_ActionId: 81565b63-8607-4f15-82c7-5110d3e3a543
     m_ActionName: Gameplay/Reload[/Keyboard/r,/XInputControllerWindows/dpad/down]
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -36650,7 +36651,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818269860
 GameObject:
@@ -41481,7 +41482,7 @@ Transform:
   - {fileID: 2048502542}
   - {fileID: 1656150990}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2022552529
 GameObject:
@@ -41578,7 +41579,7 @@ GameObject:
   - component: {fileID: 2024246169}
   - component: {fileID: 2024246168}
   m_Layer: 0
-  m_Name: Input Pairer
+  m_Name: Input Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41596,6 +41597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf375f795b8f2b4f89a3eb103c099ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSharingKeyboard: 0
 --- !u!4 &2024246169
 Transform:
   m_ObjectHideFlags: 0
@@ -41609,7 +41611,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035167485
 GameObject:
@@ -42362,7 +42364,7 @@ Transform:
   - {fileID: 214382338}
   - {fileID: 505484364}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060610598
 GameObject:
