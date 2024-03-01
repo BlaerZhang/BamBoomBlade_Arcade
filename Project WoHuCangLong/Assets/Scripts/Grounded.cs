@@ -40,14 +40,14 @@ public class Grounded : MonoBehaviour
         scoreText.text = GameManager.instance.player1WinsCount + "-" + GameManager.instance.player2WinsCount;
         if (GameManager.instance.isInMatch)
         {
-            subText.text = "Get Ready for the Next Round";
+            subText.text = "胜负未决，再战一合";
         }
         else
         {
             if (GameManager.instance.player1WinsCount == GameManager.instance.targetWinsCount)
-                endingText.text = "Left Wins";
+                endingText.text = "左胜";
             if (GameManager.instance.player2WinsCount == GameManager.instance.targetWinsCount)
-                endingText.text = "Right Wins";
+                endingText.text = "右胜";
             // subText.text = "Press A or Space to Start a New Match";
         }
     }
